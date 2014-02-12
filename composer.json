@@ -1,0 +1,30 @@
+{
+	"name": "backboneit/contao-dao",
+	"description": "Simple DAOs for Contao.",
+	"keywords": [ "database", "dao", "utility" ],
+	"type": "contao-module",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Oliver Hoff",
+			"email": "oliver@hofff.com",
+			"homepage": "http://hofff.com/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.3",
+		"contao/core": ">=2.11,<4"
+	},
+	"autoload":{
+		"psr-0":{
+			"bbit":"src/"
+		}
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+			}
+		}
+	}
+}
