@@ -157,7 +157,7 @@ class DefaultDAO implements DAO {
 	}
 
 	public function requireSynced() {
-		if(!$this->isSync($optimisticLockingValue)) {
+		if(!$this->isSynced($optimisticLockingValue)) {
 			throw $optimisticLockingValue === null
 				? NotFoundException::create($this)
 				: OutOfSyncException::create($this, $optimisticLockingValue);
